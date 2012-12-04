@@ -4,6 +4,17 @@ class UploadController < ApplicationController
     render :file => 'app\views\upload\uploadfile.rhtml'
   end
 
+  def show
+    @uploads = DataFile.paginate(page: params[:page])
+    @upload = DataFile.paginate(page: params[:page])
+    @data_files = DataFile.paginate(page: params[:page])
+    @data_file = DataFile.paginate(page: params[:page])
+    render :file => 'app\views\upload\show.html.erb'
+
+
+
+  end
+
   def create
     name = params[:data_file][:name]
     email = params[:data_file][:email]

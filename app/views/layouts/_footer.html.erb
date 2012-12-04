@@ -5,7 +5,7 @@
   <nav>
     <ul>
       <%  if signed_in?  %>
-
+         <li><%= link_to "Registrants", registrants_path %></li>
       <% else %>
         <li><%= link_to "Admin Login", signin_path %></li>
       <% end %>

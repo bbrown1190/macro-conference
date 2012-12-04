@@ -1,5 +1,44 @@
-<li>
-  <%= registrant.name %>
-  <%= registrant.email %>
 
-</li>
+ <div class="registrant-data">
+   <div class="name">
+     <%= registrant.name %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="email">
+   <%= registrant.email %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="institution">
+   <%= registrant.institution %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="chair">
+   <% if registrant.chair? %>
+        yes
+   <% else %>
+     no
+   <% end %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="discussant">
+     <%if registrant.discussant? %>
+     yes
+     <% else %>
+     no
+     <% end %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="presenter">
+     <% if registrant.presenter? %>
+     yes
+     <% else %>
+     no
+     <% end %>
+   </div>
+   <div class="vertical-divider"></div>
+   <div class="subjects">
+     <%= registrant.subject %>
+   </div>
+
+ </div>
+

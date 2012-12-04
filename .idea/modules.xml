@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/macroeconomics_conference.iml" filepath="$PROJECT_DIR$/.idea/macroeconomics_conference.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/railstutorial-sample_app_2nd_ed-f02407d.iml" filepath="$PROJECT_DIR$/.idea/railstutorial-sample_app_2nd_ed-f02407d.iml" />
     </modules>
   </component>

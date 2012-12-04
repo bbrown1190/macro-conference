@@ -1,10 +1,10 @@
-<% provide(:title, 'All users') %>
-<h1>All users</h1>
+<% provide(:title, 'Paper') %>
+<h1>Papers</h1>
 
 <%= will_paginate %>
 
 <ul class="users">
-  <%= render @users %>
+  <%= render @submitter %>
 </ul>
 
 <%= will_paginate %>

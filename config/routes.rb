@@ -30,6 +30,7 @@ SampleApp::Application.routes.draw do
   match '/call_for_papers', to: 'static_pages#call_for_papers'
   match '/forum', to: 'static_pages#forum'
   match '/uploadfile/index', to: 'upload#index'
+  match '/papers', to: 'static_pages#papers'
 
 
 

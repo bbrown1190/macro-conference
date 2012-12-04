@@ -15,4 +15,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def paper
+    @papers = DataFile.paginate(page: params[:page])
+  end
 end

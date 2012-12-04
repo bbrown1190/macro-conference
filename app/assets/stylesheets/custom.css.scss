@@ -183,8 +183,126 @@ body {
       }
   }
 }
+.vertical-divider {
+  height: 10px;
+  border-left: 1px solid gray;
+  display: inline-block;
+  width: 1px;
+}
+.registrant-header {
+  width: 900px;
+  margin-left: 20px;
+  height: 25px;
+  border: 1px solid white;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBEBEB', endColorstr='#D4D4D4'); /* for IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#D4D4D4)); /* for webkit browsers */
+  background: -moz-linear-gradient(top,  #EBEBEB,  #D4D4D4); /* for firefox 3.6+ */
+  .name {
+     display: inline-block;
+     width: 150px;
+     height: 25px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 7px;
+   }
+  .email {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    padding: 0px 0px 0px 7px;
 
+  }
+  .institution {
+    display: inline-block;
+    width: 170px;
+    height: 25px;
+    padding: 0px 0px 0px 7px;
+  }
+  .chair {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
 
+  }
+  .discussant {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+
+  }
+  .presenter {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+
+  }
+  .subjects {
+    display: inline-block;
+    width: 230px;
+    height: 15px;
+    padding: 0px 0px 0px 0px;
+
+  }
+}
+.registrant-data {
+  width: 900px;
+  margin-left: 20px;
+  height: 25px;
+  border-bottom: 1px solid #D4D4D4;
+  .name {
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 7px;
+  }
+  .email {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    padding: 0px 0px 0px 7px;
+
+  }
+  .institution {
+    display: inline-block;
+    width: 170px;
+    height: 25px;
+    padding: 0px 0px 0px 7px;
+    font-size: 10px;
+
+  }
+  .chair {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+
+  }
+  .discussant {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+
+  }
+  .presenter {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+
+  }
+  .subjects {
+    display: inline-block;
+    width: 230px;
+    height: 25px;
+    padding: 0px 0px 0px 0px;
+    font-size: 10px;
+
+  }
+}
 
 .banner1 {
   background-color: white;

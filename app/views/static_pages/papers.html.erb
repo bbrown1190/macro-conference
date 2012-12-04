@@ -1,0 +1,19 @@
+<% provide(:title, 'papers') %>
+<h1>Papers</h1>
+
+<div class="papers-header">
+  <div class="name">
+        Name
+  </div>
+  <div class="email">
+        Email
+  </div>
+</div>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <%= render @papers %>
+</ul>
+
+<%= will_paginate %>
