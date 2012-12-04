@@ -37,7 +37,7 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem 'activesupport'
-  gem 'activerecord-mysql-adapter'
+  # gem 'activesupport'
+  # gem 'activerecord-mysql-adapter'
   gem 'rack-ssl'
 end
