@@ -1,7 +1,7 @@
 class UploadController < ApplicationController
   def index
     @file = DataFile.new
-    render :file => 'app\views\upload\uploadfile.rhtml'
+    render :file => 'app/views/upload/uploadfile.rhtml'
   end
 
   def show
@@ -9,7 +9,7 @@ class UploadController < ApplicationController
     @upload = DataFile.paginate(page: params[:page])
     @data_files = DataFile.paginate(page: params[:page])
     @data_file = DataFile.paginate(page: params[:page])
-    render :file => 'app\views\upload\show.html.erb'
+    render :file => 'app/views/upload/show.html.erb'
 
 
 
