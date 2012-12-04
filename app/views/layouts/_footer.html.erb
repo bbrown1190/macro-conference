@@ -1,0 +1,18 @@
+<footer class="footer">
+  <small>
+    <a href="http://www.claremontmckenna.edu">Claremont Mckenna Home Page</a>
+  </small>
+  <nav>
+    <ul>
+      <%  if signed_in?  %>
+
+      <% else %>
+        <li><%= link_to "Admin Login", signin_path %></li>
+      <% end %>
+      <li><a href="http://www.claremontmckenna.edu">Claremont Mckenna Home Page</a></li>
+      <% if signed_in? %>
+          <li><%= link_to "Announcements", signin_path %></li>
+      <% end %>
+    </ul>
+  </nav>
+</footer>

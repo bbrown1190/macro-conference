@@ -1,0 +1,32 @@
+
+<div class="call-for-papers">
+
+  <div class="title">Call for Papers</div>
+
+  <div class="information">
+    If you are interested in submitting a paper to present. Upload your paper in PDF format here.
+  </div>
+  <div class="form-bucket">
+    <div class="empty-box"></div>
+    <%= form_for(@file, multipart: true) do |f| %>
+
+      <div class="form-label"> Your Name</div>
+      <%= text_field_tag "data_file[name]", @file.name %>
+
+      <div class="empty-box"></div>
+
+      <div class="form-label"> Your Email </div>
+      <%= text_field_tag "data_file[email]", @file.email %>
+
+      <div class="empty-box"></div>
+
+        <div class="form-label"> Select a File </div>
+      <div class="field">
+        <%= f.file_field 'upload' %>
+      </div>
+      <div class="submit">
+        <%= submit_tag "Upload" %>
+      </div>
+  <% end %>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<% provide(:title, 'Register') %>
+<div class="page-title">
+  Register
+</div>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@registrant) do |f| %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Your Full Name</div>
+        <%= f.text_field :name %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Your Email</div>
+        <%= f.text_field :email %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Institution</div>
+        <%= f.text_field :institution %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Presenter</div>
+        <%= f.check_box :presenter %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Discussant</div>
+        <%= f.check_box :discussant %>
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Which subject areas are you willing to discuss?</div>
+        <%= f.text_field :subject %>
+
+
+        <div class="empty-box"></div>
+
+        <div class="form-label">Chair</div>
+        <%= f.check_box :chair %>
+
+
+        <div class="empty-box"></div>
+
+
+
+
+
+        <%= f.submit "Register for Conference", class: "button1" %>
+
+    <% end %>
+  </div>
+</div>
