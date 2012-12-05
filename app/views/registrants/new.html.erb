@@ -1,11 +1,17 @@
 <% provide(:title, 'Register') %>
 <div class="page-title">
-  Register
+  Registration
 </div>
 
 <div class="row">
+
   <div class="span6 offset3">
     <%= form_for(@registrant) do |f| %>
+        <div class="registrant-info">
+          The deadline to register is July 1st, 2013.
+          If you would like to be a chair, discussant, or presenter at the conference please check the corresponding box below.
+          If you are planning on staying at a nearby hotel for the conference what would be your preference?
+        </div>
 
         <div class="empty-box"></div>
 
@@ -19,29 +25,41 @@
 
         <div class="empty-box"></div>
 
-        <div class="form-label">Institution</div>
+        <div class="form-label">Home Institution</div>
         <%= f.text_field :institution %>
 
         <div class="empty-box"></div>
+        If you are doing more than just attending. Please check the box or boxes of your desired role.
+        <div class="empty-box"></div>
 
-        <div class="form-label">Presenter</div>
-        <%= f.check_box :presenter %>
+        <div class="role-label">Presenter</div>
+        <div class="check"><%= f.check_box :presenter %></div>
+
+        <div class="role-label">Chair</div>
+        <div class="check"><%= f.check_box :chair %></div>
+
+        <div class="role-label">Discussant</div>
+        <div class="check"><%= f.check_box :discussant %></div>
 
         <div class="empty-box"></div>
 
-        <div class="form-label">Discussant</div>
-        <%= f.check_box :discussant %>
-
-        <div class="empty-box"></div>
-
-        <div class="form-label">Which subject areas are you willing to discuss?</div>
+        <div class="form-label">If you are planning on being a discussant... Which subject areas are you willing to discuss?</div>
         <%= f.text_field :subject %>
 
 
         <div class="empty-box"></div>
+        <div class="form-label">What is your hotel preference?</div>
 
-        <div class="form-label">Chair</div>
-        <%= f.check_box :chair %>
+        <div class="role-label">Double Tree</div>
+        <div class="check"><%= f.check_box :double %></div>
+
+        <div class="role-label">Casa 425</div>
+        <div class="check"><%= f.check_box :casa %></div>
+
+        <div class="role-label">Red Roof</div>
+        <div class="check"><%= f.check_box :red %></div>
+
+
 
 
         <div class="empty-box"></div>

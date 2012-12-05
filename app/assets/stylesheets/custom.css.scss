@@ -41,12 +41,33 @@ $light-grey: #E6E6E6;
     padding-top: 10px;
 }
 .form-label {
-     font-size: 16px;
-     color: $steel;
+  font-size: 16px;
+  color: $steel;
+  margin-bottom: 2px;
+}
+.role-label {
+  font-size: 16px;
+  color: $steel;
+  display: inline-block;
+  margin: 0px 0px 0px 20px;
+}
+.check {
+  margin: 0px 3px 0px 3px;
+  display: inline-block;
 }
 .empty-box {
   width: 100%;
   height: 20px;
+}
+.registrant-info {
+  font-size: 14px;
+  color: $steel;
+  margin-top: 20px;
+}
+.hotels {
+  text-align: center;
+  font-size: 14px;
+  margin: 5px 0px 5px 0px;
 }
 .button1 {
   //-moz-box-shadow: 0px 0px 4px #000;
@@ -72,7 +93,6 @@ $light-grey: #E6E6E6;
 body {
   background: url(KravisEdited.jpg);
   background-attachment: fixed;
-
 }
 .top-header {
   height: 35px;
@@ -117,6 +137,7 @@ body {
   -moz-box-shadow: 0px 6px 32px #E6E6E6;
   -webkit-box-shadow: 0px 6px 32px #E6E6E6;
   box-shadow: 0px 6px 32px #E6E6E6;
+  text-align: center;
 
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BF4B30', endColorstr='#A62000'); /* for IE */
   background: -webkit-gradient(linear, left top, left bottom, from(#BF4B30), to(#A62000)); /* for webkit browsers */

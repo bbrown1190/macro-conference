@@ -1,5 +1,5 @@
 class Registrant < ActiveRecord::Base
-  attr_accessible :email, :name, :institution, :discussant, :chair, :presenter, :subject
+  attr_accessible :email, :name, :institution, :discussant, :chair, :presenter, :subject, :double, :casa, :red
 
   before_save { |registrant| registrant.email = email.downcase }
  # before_save :role_validation

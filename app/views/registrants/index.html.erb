@@ -1,6 +1,30 @@
 <% provide(:title, 'Registrants') %>
 <h1>Registrants</h1>
 
+    <% double = 0 %>
+    <% casa = 0 %>
+    <%  red = 0 %>
+
+<% @registrants.each do |r| %>
+    <% if r.double? %>
+        <% double = double + 1 %>
+    <% elsif r.casa? %>
+        <% casa = casa + 1 %>
+    <% elsif r.red? %>
+        <% red = red + 1 %>
+    <% end %>
+<% end %>
+
+<div class="hotels">
+      Number of votes for Double Tree: <%= double %>
+</div>
+<div class="hotels">
+  Number of votes for Casa 425: <%= casa %>
+</div>
+<div class="hotels">
+  Number of votes for Red Roof: <%= red %>
+</div>
+
 <%= will_paginate %>
 
 <div class="registrant-header">

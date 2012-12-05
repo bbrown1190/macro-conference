@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121204011612) do
+ActiveRecord::Schema.define(:version => 20121204183626) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title"
@@ -54,6 +54,9 @@ ActiveRecord::Schema.define(:version => 20121204011612) do
     t.boolean  "chair"
     t.boolean  "discussant"
     t.string   "subject"
+    t.boolean  "double"
+    t.boolean  "casa"
+    t.boolean  "red"
   end
 
   create_table "relationships", :force => true do |t|
