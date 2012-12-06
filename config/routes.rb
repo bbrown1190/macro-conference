@@ -8,7 +8,6 @@ SampleApp::Application.routes.draw do
   end
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts, only: [:create, :destroy]
-  resources :relationships, only: [:create, :destroy]
   resources :upload, :as => "data_files"
   resources :registrants
   resources :announcements
@@ -19,7 +18,7 @@ SampleApp::Application.routes.draw do
   match '/register',      to: 'registrants#new'
   match '/signup',        to: 'users#new'
   match '/signin',        to: 'sessions#new'
-  match '/signout',       to: 'sessions#destroy', via: :delete
+  match '/signout',       to: 'sessions#destroy'
       
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
@@ -30,7 +29,6 @@ SampleApp::Application.routes.draw do
   match '/call_for_papers', to: 'static_pages#call_for_papers'
   match '/forum', to: 'static_pages#forum'
   match '/uploadfile/index', to: 'upload#index'
-  match '/papers', to: 'static_pages#papers'
 
 
 

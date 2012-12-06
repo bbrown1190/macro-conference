@@ -16,8 +16,8 @@ class RegistrantsController < ApplicationController
   def create
     @registrant = Registrant.new(params[:registrant])
     if @registrant.save
-      p "========== it shoulda saved"
       # Handle a successful save.
+      flash[:success] = "Successful Registration"
       redirect_to root_path
     else
       p "++++++++++++ something went wrong here"

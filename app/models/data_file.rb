@@ -1,5 +1,5 @@
 class DataFile < ActiveRecord::Base
-  attr_accessible :email, :name, :file_name
+  attr_accessible :email, :name, :file_name, :paper_name, :institution
 
   def self.save(upload)
     name =  upload['datafile'].original_filename

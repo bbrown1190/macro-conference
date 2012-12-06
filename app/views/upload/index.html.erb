@@ -1,0 +1,43 @@
+<div class="page-title">
+  Submitted Papers
+</div>
+<div class="empty-box"></div>
+
+<div class="papers-header">
+  <div class="name">
+    Name
+  </div>
+  <div class="vertical-divider"></div>
+  <div class="email">
+    Email
+  </div>
+  <div class="vertical-divider"></div>
+  <div class="institution">
+    Institution
+  </div>
+  <div class="vertical-divider"></div>
+  <div class="papers">
+    Paper Name
+  </div>
+</div>
+<%= will_paginate %>
+<% @uploads.each do |file| %>
+    <div class="paper-data">
+        <div class="name">
+          <%= file.name %>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="email">
+          <%= file.email %>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="institution">
+          <%= file.institution %>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="paper">
+          <%= link_to file.paper_name, root_url + "uploads/" + file.file_name%>
+        </div>
+    </div>
+ <% end %>
+<%= will_paginate %>

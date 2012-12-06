@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121204183626) do
+ActiveRecord::Schema.define(:version => 20121205224502) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title"
@@ -21,11 +21,13 @@ ActiveRecord::Schema.define(:version => 20121204183626) do
   end
 
   create_table "data_files", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.string   "email"
     t.string   "name"
     t.string   "file_name"
+    t.string   "institution"
+    t.string   "paper_name"
   end
 
   create_table "microposts", :force => true do |t|

@@ -6,12 +6,10 @@
     <ul>
       <%  if signed_in?  %>
          <li><%= link_to "Registrants", registrants_path %></li>
-      <% else %>
+         <li><%= link_to "Submitted Papers", root_url + "upload" %></li>
+         <li><%= link_to "Admin Sign Out", root_url + "signout" %></li>
+    <% else %>
         <li><%= link_to "Admin Login", signin_path %></li>
-      <% end %>
-      <li><a href="http://www.claremontmckenna.edu">Claremont Mckenna Home Page</a></li>
-      <% if signed_in? %>
-          <li><%= link_to "Announcements", signin_path %></li>
       <% end %>
     </ul>
   </nav>
