@@ -1,1 +1,1 @@
-THINGS WILL BE UPLOADED TO THIS DIRECTORY... FOR NOW
+Make sure there is always an uploads folder
