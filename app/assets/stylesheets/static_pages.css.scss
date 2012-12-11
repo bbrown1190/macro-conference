@@ -1,3 +1,29 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$steel: #595959;
+
+.call-bucket {
+  width: 80%;
+  margin-left: 10%;
+  .title {
+    font-weight: bold;
+    text-align: center;
+    color: $steel;
+    font-size: 16px;
+    padding: 4px;
+  }
+  .dates {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .goals {
+    font-style: italic;
+    font-size: 14px;
+  }
+  .info {
+    font-size: 13px;
+  }
+  .goals2 {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+
+}

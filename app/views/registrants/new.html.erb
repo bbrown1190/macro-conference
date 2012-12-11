@@ -1,6 +1,6 @@
 <% provide(:title, 'Register') %>
 <div class="page-title">
-  Registration
+  Preregistration
 </div>
 
 <div class="row">
@@ -8,7 +8,6 @@
   <div class="span6 offset3">
     <%= form_for(@registrant) do |f| %>
         <div class="registrant-info">
-          The deadline to register is July 1st, 2013.
           If you would like to be a chair, discussant, or presenter at the conference please check the corresponding box below.
           If you are planning on staying at a nearby hotel for the conference what would be your preference?
         </div>
@@ -43,12 +42,12 @@
 
         <div class="empty-box"></div>
 
-        <div class="form-label">If you are planning on being a discussant... Which subject areas are you willing to discuss?</div>
+        <div class="form-label">If you are planning on being a discussant, which subject areas are you willing to discuss?</div>
         <%= f.text_field :subject %>
 
 
         <div class="empty-box"></div>
-        <div class="form-label">What is your hotel preference?</div>
+        <div class="form-label">(Non-Binding) What is your hotel preference?</div>
 
         <div class="role-label">
           <a href="http://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-claremont-ONTCLDT/index.html">Double Tree </a>
@@ -61,18 +60,11 @@
         <div class="check"><%= f.check_box :casa %></div>
 
         <div class="role-label">
-          <a href="http://www.redroofinnontario.com">Red Roof Inn (airport)</a>
+          Other
         </div>
         <div class="check"><%= f.check_box :red %></div>
 
-
-
-
         <div class="empty-box"></div>
-
-
-
-
 
         <%= f.submit "Register for Conference", class: "button1" %>
 

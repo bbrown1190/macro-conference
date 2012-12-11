@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def call_for_papers
+
+  end
+
   def paper
     @papers = DataFile.paginate(page: params[:page])
   end

@@ -4,19 +4,27 @@
         <div class="left-section">
           <div class="gray-box">
               <div class="banner1">
-                Call for Papers
+                <%= link_to "Call for Papers", call_for_papers_path%>
               </div>
               <div class="information">
-                Deadline to submit papers by is April 15th, 2013
+                Deadline to submit abstracts is April 15th, 2013
               </div>
               <div class="button1">
-                <%= link_to "Submit a Paper", data_files_path, style: "color: #EBEBEB" %>
+                <%= link_to "Upload abstract here", new_data_file_path, style: "color: #EBEBEB" %>
               </div>
               <div class="information">
-                Deadline to register by is July 1st, 2013
+                Authors will be notified by May 1st, 2013
+              </div>
+            <div class="gradient-divider"></div>
+            <div class="information">
+                The requested registration deadline is June 1st, 2013
               </div>
               <div class="button1">
-                <%= link_to "Register for Conference", new_registrant_path, style: "color: #EBEBEB" %>
+                <%= link_to "Preregistration", new_registrant_path, style: "color: #EBEBEB" %>
+              </div>
+            <div class="gradient-divider"></div>
+            <div class="information">
+                Final drafts are due July 22nd, 2013 and will be posted on the conference website
               </div>
             <div class="gradient-divider"></div>
             <div class="information">
